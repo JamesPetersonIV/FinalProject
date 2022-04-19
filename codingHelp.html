@@ -5,11 +5,35 @@
     <title>codingHelp</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 
 
 <body>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        },
+        });
+    </script>
 <header>
     <h1>Coding Tutuorials</h1>
 </header>
@@ -28,30 +52,25 @@
 
 <!--Use the main area to add the main content of the webpage-->
 <main>
-    <div class="container">
-        <section id="dg-container" class="dg-container">
-            <div class="dg-wrapper">
-                <a href=""><img src=""></a>
-                <a href=""><img src=""></a>
-                <a href=""><img src=""></a>
-                <a href=""><img src=""></a>
-                <a href=""><img src=""></a>
-            </div>
-
-            <nav>
-                <span class="dg-prev">&lt;</span>
-                <span class="dg-prev">&gt;</span>
-            </nav>
-        </section>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-    <script>
-        $(Function(){
-            $('#dg-container').gallery();
-        });
-    </script>
+    <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+      <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+    <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+  </div>
 </main>
 
 <!--Use footer area to add web page footer content-->
