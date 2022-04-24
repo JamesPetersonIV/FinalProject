@@ -1,9 +1,3 @@
-<!--
-Arthur: James Peterson IV
-Date: mar 22 2022
-File name: contact.html
--->
-
 <!DOCTYPE html>
 <!--This website template was created by James Peterson IV-->
 <html lang="en">
@@ -15,8 +9,14 @@ File name: contact.html
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/style.css">
     </head>
-    
-    <body style="background-color:#82EEFD;">
+
+    <body style="background-color:#82EEFD;" id="homebody">
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+            <source src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
         <div id="container"> 
             <header>
                 <a href="Home.html" > 
@@ -43,10 +43,44 @@ File name: contact.html
 
             <!--Use the main area to add the main content of the webpage-->
             <main>
-                <div id="intro">
-                  <p>Things on homepage...</p>
-                </div>
-
+                <table id="home" style="width: 90%;">
+                    <tr>
+                        <th style="font-size:30px;">&#128126;DevTutos</th>
+                        <th style="font-size:30px;">Purpose</th>
+                        <th style="font-size:30px;">&#128187;CodingTutos</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Discover new developing/design videos<br>
+                                <a href="devhelp.html" style="color:#20B2AB">Click Here</a>
+                            </p>
+                            <ul id="none">
+                                <li>Character Modeling</li>
+                                <li>Environment Creation</li>
+                                <li>Story Planning</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>
+                                The purpose of this prototype is to assit users in game development/design and<br>
+                                coding through the use of tutuorial videos. GTP is a platform revovling around<br>
+                                developing/designing, character modeling, and coding.
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Perfect place for discovering new videos on coding<br>
+                                <a href="codingHelp.html" style="color:#20B2AB">Click Here</a>
+                            </p>
+                            <ul id="none">
+                                <li>C#</li>
+                                <li>Objective-C</li>
+                                <li>ActionScript</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </main>
     
             <!--Use footer area to add web page footer content-->
@@ -60,6 +94,7 @@ File name: contact.html
                 </p>
             </footer>
 
+        </div>
         </div>
 
     </body>
