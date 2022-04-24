@@ -29,7 +29,7 @@ iframe{
 
 /*Style rules for navigation area*/
 nav{
-    background-color: #2a1f14;
+    background-color: #1338BE;
   }
   
   nav ul{
@@ -52,5 +52,22 @@ nav{
     padding-bottom: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
+    text-decoration: none;
+  }
+
+  /*Style rules for footer content*/
+footer{
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #1338BE;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 0%;
+    padding-left: 0%;
+    color: #f3e6d8;
+  }
+  
+  footer a{
+    color: #f3e6d8;
     text-decoration: none;
   }
