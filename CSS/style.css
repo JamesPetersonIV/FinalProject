@@ -118,3 +118,9 @@ footer{
 #none{
     list-style-type: none;
 }
+
+h1{
+    font-family:Geneva,Arial,sans-serif;
+    color: #ffff;
+    font-style: italic;
+}
